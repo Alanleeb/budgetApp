@@ -1,22 +1,27 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <form id="add_entry">
-            <label>Amt:</label>
-            <input type="number" min="0" required name="amt" />
-            <label>Description:</label>
-            <input name="description" />
-            <select name="type">
-                <option>Debit</option>
-                <option>Credit</option>
-            </select>
-        </form>
-        <ul id="history">
-        </ul>
-        </ul>
-        <script src="https://unpkg.com/redux@4.0.0/dist/redux.min.js"></script>
-        <script src="./main.js"></script>
-    </body>
- </html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <form id="add_entry">
+      <label>Amt:</label>
+      <input type="number" min="0" required name="amt" />
+      <label>Description:</label>
+      <input name="description" />
+      <select name="type">
+        <option>Debit</option>
+        <option>Credit</option>
+      </select>
+
+      <button>Add Entry</button>
+    </form>
+    <ul id="history">
+    </ul>
+    <h1 id="total">$0</h1>
+
+
+    <script src="https://unpkg.com/redux@4.0.0/dist/redux.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
